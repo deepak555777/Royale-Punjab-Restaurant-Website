@@ -18,7 +18,7 @@
     margin:0.6rem auto;
   }
   .btn-container {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content:first baseline;
     overflow: auto;
@@ -28,23 +28,21 @@
     border-color: transparent;
     font-size: 1.5rem;
     text-transform:uppercase;
+    font-style: italic;
     margin: 0 0.5rem;
-  
     padding: 0.35rem;
     color: var(--clr-gold);
     cursor: pointer;
     transition: var(--transition);
-    border-radius: var(--radius);
+    font-family: 'Tiro Devanagari Hindi';
   }
   .filter-btn:hover {
     background: var( --gold-crayola);
     color:black;
-    border-radius:30%;
   }
   .filter-btn:active {
-    background:  --gold-crayola;
+    background:  var(--gold-crayola);
     color:black;
-    border-radius:30%;
   }
   .section-center {
     width: 90vw;
@@ -104,3 +102,13 @@
     }
   }
   
+  .active-category{
+   text-align:center;
+   text-transform: uppercase;
+   font-style:italic;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: 800;
+   font-size:3rem;
+   color: var(--gold-crayola);
+   text-decoration: underline;
+  }

@@ -3,13 +3,14 @@ import React from "react";
 import Home from "./components/Home/Home";
 import MenuList from './components/Menu/Menu-List'
 // NavMenu from "./components/Navigation/Navigation-Menu";
-import Story from './components/Story/story'
+//import Story from './components/Story/story'
 import HomeMenu from './components/Home/HomeMenu'
 // Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Features from './components/Features/Features'
 import Footer from './components/Footer/Footer'
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import './components/Story/story.css'
 
 function App() {
   return (
@@ -20,7 +21,6 @@ function App() {
 <React.Fragment>
 <Navbar/>
   <Home/>
-  <Story/>
   <HomeMenu/>
   <Features/>
   <Footer/>
@@ -35,11 +35,6 @@ function App() {
 <Route exact path='/contact' element={
   <React.Fragment>
   <Footer/>
-  </React.Fragment>
-}/>
-<Route exact path='/about' element={
-  <React.Fragment>
-  <Story/>
   </React.Fragment>
 }/>
 </Routes>

@@ -1,10 +1,17 @@
 import React from "react";
-const Menu = ({ items }) => {
+const Menu = ({ items, activeCategory }) => {
+  if(activeCategory === "Lamb"){
+   activeCategory="Lamb(Non-Veg)"
+  }
+  else if(activeCategory ==="Seafood"){
+    activeCategory="Seafood(Non-Veg)"
+  }
   return (
     <div className="section-center">
+      <h2 className="active-category">{activeCategory}</h2>
       <ul className="grid-list">
         {items.map((menuItem) => {
-          const { key,id, title, img, price, desc } = menuItem;
+          const { key, id, title, img, price, desc } = menuItem;
           return (
             <li key={id}>
               <div className="menu-card hover:card">
@@ -16,18 +23,11 @@ const Menu = ({ items }) => {
                     className="img-cover"
                   />
                 </figure>
-
                 <div>
                   <div className="title-wrapper">
-                    <h3 className="title-3">
-                      <a href="/" className="card-title">
-                        {title}
-                      </a>
-                    </h3>
-
+                    <h3 className="title-3">{title}</h3>
                     <span className="span title-2">${price}</span>
                   </div>
-
                   <p className="card-text label-1">{desc}</p>
                 </div>
               </div>

@@ -5,7 +5,7 @@ import Categories from "./Categories";
 
 function MenuList() {
   const [menuItems, setMenuItems] = useState([]);
-  const [categories, setCategories] = useState();
+  const [activeCategory, setActiveCategory] = useState("Appetizers");
 
 
   const getData = useCallback(async () => {
@@ -35,10 +35,9 @@ function MenuList() {
   getData();
   },[])
     
-  const allCategories = ["all", ...new Set(menuItems.map(item => item.category))];
+  const allCategories = [ ...new Set(menuItems.map(item => item.category))];
   // setCategories(allCategories)
 
-  const allitems = menuItems;
   const filterItems = (category) => {
     if(category === "all" ) {
       setFilteredItems(menuItems);
@@ -46,6 +45,7 @@ function MenuList() {
       const newItems = menuItems.filter((item) => item.category === category);
       setFilteredItems(newItems);
     }
+setActiveCategory(category);
   };
   const [filteredItems, setFilteredItems] = useState();
 
@@ -56,8 +56,8 @@ function MenuList() {
           <h2>OUR MENU</h2>
           <div className="underline"></div>
         </div>
-        <Categories categories={allCategories} filterItems={filterItems} />
-        <Menu items={filteredItems ? filteredItems : menuItems}/>
+        <Categories categories={allCategories} activeCategory={activeCategory} filterItems={filterItems} />
+        <Menu items={filteredItems? filteredItems:menuItems} activeCategory={activeCategory}/>
       </section>
     </main>
   );

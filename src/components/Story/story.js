@@ -14,7 +14,7 @@ function Story() {
 
       <p className="label-2 section-subtitle" id="about-label">Our Story</p>
 
-      <h2 className="headline-1 section-title">Every Fla vor Tells a Story</h2>
+      <h2 className="headline-1 section-title">We Have Something To Share With You.</h2>
 
       <p className="section-text">
         Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the

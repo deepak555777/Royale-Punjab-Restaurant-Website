@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import {Link} from 'react-router-dom'
 
 function Footer() {
   return (
@@ -51,10 +52,10 @@ function Footer() {
               </div>
 
               <button type="submit" className="btn btn-secondary">
-                <span className="text text-1">Subscribe</span>
+                <span className="text text-1">Send an E-mail</span>
 
                 <span className="text text-2" aria-hidden="true">
-                  Subscribe
+                  Send an E-mail
                 </span>
               </button>
             </form>
@@ -64,14 +65,12 @@ function Footer() {
         <div className="footer-bottom">
           <p className="copyright">
             &copy; 2023 Royale Punjab All Rights Reserved | Developed by{" "}
-            <a
-              href="https://github.com/codewithsadee"
-              target="_blank"
-              rel="noreferrer"
+            <Link to="https://www.linkedin.com/in/sharmadeepak03/"
+          
               className="link"
             >
               Deepak Sharma
-            </a>
+            </Link>
           </p>
         </div>
       </div>

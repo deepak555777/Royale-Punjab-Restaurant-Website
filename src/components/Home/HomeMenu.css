@@ -90,3 +90,10 @@
 .title-3{
   font-size:1.7rem;
 }
+
+@media screen and (min-width:600px) {
+  .menu-card .card-text{
+    font-size:2vw;
+    line-height:3vw;
+  }
+}
