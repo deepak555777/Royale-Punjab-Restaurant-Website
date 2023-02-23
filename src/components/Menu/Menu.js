@@ -1,4 +1,6 @@
 import React from "react";
+
+
 const Menu = ({ items, activeCategory }) => {
   if(activeCategory === "Lamb"){
    activeCategory="Lamb(Non-Veg)"
@@ -11,7 +13,7 @@ const Menu = ({ items, activeCategory }) => {
       <h2 className="active-category">{activeCategory}</h2>
       <ul className="grid-list">
         {items.map((menuItem) => {
-          const { key, id, title, img, price, desc } = menuItem;
+          const { id, title, img, price, desc } = menuItem;
           return (
             <li key={id}>
               <div className="menu-card hover:card">

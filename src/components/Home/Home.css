@@ -13,13 +13,17 @@
   font-size:4rem;
   text-transform:uppercase;
   font-family: 'Tiro Devanagari Hindi';
-  font-size:"4rem";
+  margin:5rem;
+}
+.main-title{
+  font-size:5rem;
+  margin:3rem 0;
 }
 .simple-text{
-  display:inline;
+  letter-spacing:0;
   font-size:2rem;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 200;
+  margin:0;
 }
 
 .hero .slider-item {
@@ -31,7 +35,6 @@
   height: 100%;
   display: grid;
   place-content: center;
-  
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-3);
@@ -120,6 +123,7 @@
 .slider-reveal {
   transform: translateY(30px);
   opacity: 0;
+ margin: 0;
 }
 
 .hero .slider-item.active .slider-reveal {
@@ -146,3 +150,9 @@
 
 .hero .slider-item.active .btn { animation-delay: 2s; }
 
+@media (min-width: 1200px){
+  .hero-title{
+    letter-spacing:1rem;
+    margin-bottom: 5rem;
+  }
+}

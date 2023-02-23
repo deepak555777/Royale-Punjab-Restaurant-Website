@@ -18,9 +18,9 @@ function Footer() {
             </address>
 
             <a
-              href="mailto:booking@grilli.com"
+              href="mailto:sdeepakdev2@gmail.com"
               className="body-4 contact-link"
-            ></a>
+            >Book Now</a>
 
             <a href="tel:+1 (514) 278 8777" className="body-4 contact-link">
               Booking Request : (+1)514-278-8777

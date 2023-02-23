@@ -83,6 +83,11 @@
   }
   
   @media screen and (min-width: 768px) {
+    .btn-container {
+    
+      justify-content:center;
+     
+    }
     .menu-item {
       grid-template-columns: 225px 1fr;
       gap: 0 1.25rem;
@@ -95,7 +100,6 @@
   @media screen and (min-width: 1200px) {
     .section-center {
       width: 95vw;
-      grid-template-columns: 1fr 1fr;
     }
     .photo {
       height: 150px;

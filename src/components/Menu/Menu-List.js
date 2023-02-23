@@ -14,7 +14,9 @@ function MenuList() {
       const data = await response.json();
       const items = [];
       Object.keys(data).forEach((category) => {
+        // eslint-disable-next-line
         Object.keys(data[category]).map((dish) => {
+          
           items.push({
             id: data[category][dish].id,
             title: data[category][dish].title,
@@ -33,7 +35,7 @@ function MenuList() {
 
   useEffect(() => {
   getData();
-  },[])
+  },[getData])
     
   const allCategories = [ ...new Set(menuItems.map(item => item.category))];
   // setCategories(allCategories)

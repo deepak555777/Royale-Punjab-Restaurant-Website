@@ -19,7 +19,6 @@ function App() {
 <Routes>
 <Route exact path='/' element={
 <React.Fragment>
-<Navbar/>
   <Home/>
   <HomeMenu/>
   <Features/>
